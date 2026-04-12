@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "firecrawl-mcp": {
+      "type": "local",
+      "command": [
+        "bash",
+        "-c",
+        "source $HOME/.nvm/nvm.sh && nvm use default > /dev/null && npx -y firecrawl-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "FIRECRAWL_API_URL": "http://localhost:3002",
+        "FIRECRAWL_API_KEY": "not-needed-locally"
+      }
+    },
+    "docker": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "bash",
+        "-c",
+        "source $HOME/.nvm/nvm.sh && nvm use default > /dev/null && npx -y mcp-server-docker"
+      ],
+      "environment": {
+        "DOCKER_HOST": "unix:///var/run/docker.sock",
+        "PATH": "/usr/local/bin:/usr/bin:/bin"
+      }
+    }
+  }
+}
