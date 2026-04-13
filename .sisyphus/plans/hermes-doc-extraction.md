@@ -19,15 +19,15 @@ Extract specific documentation from the remote Hermes Agent repository for local
 ## Implementation Tasks
 
 ### Phase 1: Documentation Extraction
-1. **Execute Repomix Extraction**:
+1. [x] **Execute Repomix Extraction**:
     - Command: `npx repomix@latest --remote https://github.com/NousResearch/hermes-agent.git --include "website/docs/**" --output docs/reference/hermes-doc-pack.md`
     - QA Scenario: Verify that the command completes without errors and the output file is created.
-2. **Verify Extraction Quality**:
+2. [x] **Verify Extraction Quality**:
     - Action: Read the first 100 lines of `docs/reference/hermes-doc-pack.md`.
     - QA Scenario: Ensure the file starts with the expected Repomix header and contains content from the `website/docs` directory.
 
 ### Phase 2: Agent Guidance Documentation
-3. **Update README with Agent Roles**:
+3. [x] **Update README with Agent Roles**:
     - Action: Add a section titled `## Agent Roles` to `README.md`.
     - Content: Explain that **Prometheus** is the Strategic Planner (creates work plans, does not write code) and **Sisyphus/Build agents** are the Implementers (execute plans, write code). Mention that running `/start-work` triggers the transition from planning to execution.
     - QA Scenario: Verify the section is clearly visible and accurately describes the roles.
