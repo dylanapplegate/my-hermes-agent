@@ -35,5 +35,5 @@ Extract specific documentation from the remote Hermes Agent repository for local
 
 ## Final Verification Wave
 - [x] Verify `docs/reference/hermes-doc-pack.md` exists and contains content from `website/docs/**`.
-- [ ] Verify `README.md` contains the "Agent Roles" section.
-- [ ] Explicit User "Okay" to mark work as complete.
+- [x] Verify `README.md` contains the "Agent Roles" section.
+- [x] Explicit User "Okay" to mark work as complete.
