@@ -56,5 +56,5 @@ Skills are installed globally at `~/.agents/skills/`. Available skills include:
 
 ## Development Notes
 
-- `.env` is gitignored — copy from `.env.example`
+- .env is gitignored — copy from firecrawl/.env.example
 - This repo is a config layer, not a code project — minimal build/test setup
