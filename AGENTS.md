@@ -29,7 +29,7 @@ Running `/start-work` triggers transition from planning to execution.
 
 ```bash
 # Setup
-cp firecrawl/.env.example firecrawl/.env
+cp firecrawl/.env.example .env
 
 # Launch (from repo root)
 docker compose -f firecrawl/docker-compose.yaml up -d
