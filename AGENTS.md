@@ -29,7 +29,7 @@ Running `/start-work` triggers transition from planning to execution.
 
 ```bash
 # Setup
-cp firecrawl/.env.example firecrawl/.env
+cp firecrawl/.env.example .env
 
 # Launch (from repo root)
 docker compose -f firecrawl/docker-compose.yaml up -d
@@ -56,5 +56,5 @@ Skills are installed globally at `~/.agents/skills/`. Available skills include:
 
 ## Development Notes
 
-- `.env` is gitignored — copy from `.env.example`
+- .env is gitignored — copy from firecrawl/.env.example
 - This repo is a config layer, not a code project — minimal build/test setup
